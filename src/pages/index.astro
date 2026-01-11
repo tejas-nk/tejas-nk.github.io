@@ -1,0 +1,264 @@
+---
+import '../styles/global.css';
+
+const name = "Tejas Kulkarni";
+const bio = "I am an undergraduate student studying Mechanical Engineering at Birla Institute of Technology and Science - Pilani.";
+const emailObfuscated = "f20240460 AT goa DOT bits-pilani DOT ac DOT in";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>{name} | Portfolio</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lustria&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+	<body class="bg-[#fdfdfb] text-[#2d3436] font-['Lato'] antialiased">
+		<main class="max-w-3xl mx-auto px-8 py-24">
+			
+			<header class="mb-24">
+				<div class="flex flex-col md:flex-row md:items-center justify-between gap-12 mb-12">
+					<div class="flex-1">
+						<h1 class="text-6xl font-['Lustria'] text-[#1a1a1a] tracking-tighter mb-4">
+                            {name}
+                        </h1>
+						<p class="text-[#967117] font-medium text-xl italic font-['Lustria'] tracking-wide">
+                            U.G. Student at BITS Pilani, Goa Campus
+                        </p>
+                        <p class="text-[16px] [#a0a0a0] mt-4 tracking-[0.2em]">
+                            {emailObfuscated}
+                        </p>
+					</div>
+					<div class="relative">
+						<img 
+							src="/profile.jpeg" 
+							alt={name} 
+							class="relative w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-[8px] border-white shadow-2xl ring-1 ring-[#967117]/10"
+						/>
+					</div>
+				</div>
+
+				<nav class="flex flex-wrap items-center gap-6 mb-16">
+                    <a href="https://github.com/tejas-nk" class="p-2.5 bg-white shadow-sm border border-[#eee9d8] text-[#636e72] hover:text-black hover:shadow-md rounded-xl transition-all" aria-label="GitHub">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tejaskulkarni25/" class="p-2.5 bg-white shadow-sm border border-[#eee9d8] text-[#636e72] hover:text-[#0077b5] hover:shadow-md rounded-xl transition-all" aria-label="LinkedIn">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="/cv.pdf" target="_blank" class="px-8 py-3 bg-[#1a1a1a] text-[#fdfdfb] rounded-full font-bold uppercase text-[11px] tracking-[0.2em] hover:bg-[#967117] transition-all shadow-xl shadow-gray-200">
+                        Download CV
+                    </a>
+				</nav>
+
+				<div class="space-y-6">
+					<h2 class="text-[10px] font-bold uppercase tracking-[0.4em] text-[#967117]">Background</h2>
+					<p class="text-3xl leading-snug text-[#4a4a4a] font-light max-w-3xl">
+						{bio} I am deeply interested in <span class="text-black font-semibold">Fluid Mechanics</span>, <span class="text-black font-semibold">FEM</span>, and the integration of <span class="text-[#967117]">Machine Learning</span>  to solve complex Mechanical Engineering problems.
+						<br>Outside of academics, I love photography. Playing the guitar is also fun.</br>
+					</p>
+				</div>
+			</header>
+
+			<section class="mb-24">
+				<h2 class="text-[10px] font-bold uppercase tracking-[0.4em] text-[#967117] mb-10 border-b border-[#eee9d8] pb-4">Education</h2>
+				<div class="flex justify-between items-start">
+                    <div class="max-w-xl">
+                        <h3 class="text-2xl font-['Lustria'] text-black leading-tight">BITS Pilani, Goa Campus</h3>
+                        <p class="text-lg text-[#636e72] italic mt-1 font-['Lustria']">B.E. Mechanical Engineering</p>
+                        <div class="mt-6 flex gap-12">
+                            <div>
+                                <p class="text-[9px] font-bold uppercase text-[#a0a0a0] tracking-widest mb-1">CGPA</p>
+                                <p class="text-xl text-[#2d3436] font-bold">9.20 <span class="text-sm font-normal text-gray-300">/ 10.0</span></p>
+                            </div>
+                            <div>
+                                <p class="text-[9px] font-bold uppercase text-[#a0a0a0] tracking-widest mb-1">Coursework</p>
+                                <p class="text-sm text-[#636e72]">BITS F441 Robotics, CS F320 Foundations of Data Science</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="text-[#a0a0a0] font-mono text-[11px] border border-[#eee9d8] px-4 py-1.5 rounded-full">2024 — Present</span>
+			    </div>
+			</section>
+
+            <section class="mb-24">
+				<h2 class="text-[10px] font-bold uppercase tracking-[0.4em] text-[#967117] mb-10 border-b border-[#eee9d8] pb-4">Conferences & Talks</h2>
+				<div class="space-y-8">
+                    <div class="flex justify-between items-baseline group">
+                        <div class="max-w-xl">
+                            <h3 class="text-xl font-bold text-black group-hover:text-[#967117] transition-colors">ICIST - 2025</h3>
+                            <p class="text-[#636e72] text-md mt-1 italic">Topic - Delayed Luminescence in Plants</p>
+							<p>First experience presenting at an international conference held in Karnataka, IN. It was a great experience talking to professors around the country and abroad. You can find my LinkedIn post <a href="https://www.linkedin.com/feed/update/urn:li:activity:7401603362007179264/"><span class="text-black font-semibold">here</span></a> <br>Supervised by Dr. Yuriy Petenev.</br></p>
+                        </div>
+                        <span class="text-[#a0a0a0] font-mono text-[11px] uppercase">Oct 2025</span>
+                    </div>
+                    </div>
+			</section>
+
+			<section class="mb-24">
+				<h2 class="text-[10px] font-bold uppercase tracking-[0.4em] text-[#967117] mb-10 border-b border-[#eee9d8] pb-4">Academic Experience</h2>
+				<div class="bg-white border border-[#eee9d8] p-8 rounded-3xl shadow-sm">
+                    <div class="flex flex-col md:flex-row justify-between items-start gap-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-black font-['Lustria'] underline decoration-[#967117]/20 underline-offset-4">Teaching Assistant</h3>
+                            <p class="text-lg text-[#2d3436] mt-1 font-medium">BITS F103: Engineering Design and Prototyping</p>
+                            <p class="text-sm text-[#636e72] mt-4 leading-relaxed max-w-lg">
+                                Facilitated lab sessions involving CAD modelling in SolidWorkds, AutoCAD and physical prototyping. Guided first year undergraduate students through the iterative design process and safety protocols.
+								Helped design problems for evaluation and an attendance tracking website.
+                            </p>
+                            <a href="/certificate.pdf" target="_blank" class="inline-flex items-center gap-2 mt-5 px-4 py-2 border border-[#967117] text-[10px] font-bold text-[#967117] hover:bg-[#967117] hover:text-white transition-all rounded-lg uppercase tracking-widest">
+                                <span>Certificate of Merit</span>
+                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            </a>
+                        </div>
+                        <span class="text-[#a0a0a0] font-mono text-[11px] bg-[#fdfdfb] border border-[#eee9d8] px-3 py-1 rounded">Semester I, 2025-26</span>
+                    </div>
+                </div>
+			</section>
+
+			<section>
+				<h2 class="text-[10px] font-bold uppercase tracking-[0.4em] text-[#967117] mb-12 border-b border-[#eee9d8] pb-4">Projects</h2>
+				<div class="space-y-32">
+					
+                    <div class="grid md:grid-cols-5 gap-12 items-center group">
+						<div class="md:col-span-3 order-2 md:order-1">
+							<h3 class="text-3xl font-['Lustria'] text-black mb-4 group-hover:text-[#967117] transition-colors leading-tight">
+                                Additive Manufacturing for experiments at Optics Lab
+                            </h3>
+							<p class="text-xl text-[#636e72] leading-relaxed mb-6 font-light">
+								Designed and 3D printed precision optomechanical components for the Optics Lab at BITS Goa for experiments involving delicate biological tissues. 
+								<br>Key problems solved - Low tolerance, ability of designed structure to support and stretch delicate biological tissues.</br>
+
+								<br>Supervised by Dr. Yuriy Petenev.</br>
+							</p>
+							
+							<div class="flex gap-8 text-[10px] font-bold uppercase tracking-[0.2em] text-[#967117]">
+								<a href="#" class="hover:text-black transition-all">GitHub Repo</a>
+								<a href="#" class="hover:text-black transition-all">Project Log</a>
+							</div>
+						</div>
+						<div class="md:col-span-2 order-1 md:order-2">
+							<div class="overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-[#eee9d8]">
+                                <img src="/project1.png" alt="Project 1" class="w-full grayscale hover:grayscale-0 transition-all duration-700" />
+                            </div>
+						</div>
+					</div>
+
+                    <div class="grid md:grid-cols-5 gap-12 items-center group">
+    <div class="md:col-span-3 order-2 md:order-1">
+        <h3 class="text-3xl font-['Lustria'] text-black mb-4 group-hover:text-[#967117] transition-colors leading-tight">
+            Miniature Low-Cost Wind Tunnel
+        </h3>
+        <p class="text-xl text-[#636e72] leading-relaxed mb-4 font-light">
+            Engineered a functional wind tunnel prototype using salvaged household materials for under $2. The setup enables the visualization of streamline behavior and aerodynamic flow patterns using smoke-trace analysis on miniature scale models.
+        </p>
+        
+        <div class="mb-6">
+            <p class="text-[10px] font-bold uppercase tracking-widest text-[#967117] mb-2">Technical Challenges Addressed:</p>
+            <ul class="text-sm text-[#7f8c8d] grid grid-cols-2 gap-x-4 gap-y-1">
+                <li>• Laminar Flow Stabilization</li>
+                <li>• Air Current Isolation</li>
+                <li>• Smoke Velocity Control</li>
+                <li>• Discharge Rate Optimization</li>
+            </ul>
+        </div>
+
+        <div class="flex gap-8 text-[10px] font-bold uppercase tracking-[0.2em] text-[#967117]">
+            <a href="#" class="hover:text-black transition-all border-b border-transparent hover:border-[#967117]">Design Report</a>
+            <a href="#" class="hover:text-black transition-all border-b border-transparent hover:border-[#967117]">Video Demo</a>
+        </div>
+    </div>
+    
+			<div class="md:col-span-2 order-1 md:order-2">
+				<div class="overflow-hidden rounded-2xl shadow-xl border border-[#eee9d8] bg-white aspect-square flex items-center justify-center">
+					<img 
+						src="/wind-tunnel.gif" 
+						alt="Miniature Wind Tunnel Smoke Visualization" 
+						class="w-full h-full object-cover"
+						onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+					/>
+					<div class="hidden flex-col items-center gap-2">
+						<svg class="w-8 h-8 text-[#eee9d8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+						<span class="text-[#d4af37] font-mono text-[10px] uppercase tracking-widest">Animation Loading</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+                    <div class="grid md:grid-cols-5 gap-12 items-center group">
+    <div class="md:col-span-3 order-2 md:order-1">
+        <h3 class="text-3xl font-['Lustria'] text-black mb-4 group-hover:text-[#967117] transition-colors leading-tight">
+            Photon Statistics & Signal Processing in Bio-Photonics
+        </h3>
+        <p class="text-xl text-[#636e72] leading-relaxed mb-6 font-light">
+            Collaborated with <strong>Dr. Yuriy Petenev</strong> at the BITS Goa Optics Lab—a facility typically restricted to PhD researchers—to analyze quantum photon incident data. My work bridged the gap between quantum physics and biological data through advanced computational modeling.
+        </p>
+        
+        <div class="mb-6 bg-[#fdfcf8] p-4 rounded-xl border border-[#eee9d8]">
+            <p class="text-[10px] font-bold uppercase tracking-widest text-[#967117] mb-3">Key Contributions:</p>
+            <ul class="text-sm text-[#7f8c8d] space-y-2">
+                <li class="flex items-start gap-2">
+                    <span class="text-[#967117] mt-1">•</span>
+                    <span><strong>Algorithm Development:</strong> Designed a robust curve-fitting algorithm to analyze photon incident data from high-precision detectors.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-[#967117] mt-1">•</span>
+                    <span><strong>Signal Processing:</strong> Benchmarked and implemented various noise reduction algorithms to improve detector sensitivity and data fidelity.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-[#967117] mt-1">•</span>
+                    <span><strong>Publication (In-Progress):</strong> Currently co-authoring a research paper detailing the findings and algorithmic efficiency for publication.</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex gap-4">
+             <span class="px-3 py-1 bg-white border border-[#eee9d8] text-[10px] font-bold uppercase tracking-widest text-gray-400 rounded">
+                Status: Manuscript in Preparation
+             </span>
+        </div>
+    </div>
+    
+    <div class="md:col-span-2 order-1 md:order-2">
+        <div class="overflow-hidden rounded-2xl shadow-xl border border-[#eee9d8] bg-white aspect-video flex items-center justify-center">
+            <img 
+                src="/optics-lab.jpg" 
+                alt="Quantum Optics Lab Data Analysis" 
+                class="w-full h-full object-cover"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="hidden flex-col items-center gap-2">
+                <svg class="w-8 h-8 text-[#eee9d8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                <span class="text-[#d4af37] font-mono text-[10px] uppercase tracking-widest text-center px-4">Research Visualization Pending</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    <div class="grid md:grid-cols-5 gap-12 items-center group">
+						<div class="md:col-span-3 order-2 md:order-1">
+							<h3 class="text-3xl font-['Lustria'] text-black mb-4 group-hover:text-[#967117] transition-colors leading-tight">
+                                Project Title Four
+                            </h3>
+							<p class="text-xl text-[#636e72] leading-relaxed mb-6 font-light">
+								A final project showcasing your range, perhaps something interdisciplinary like ML in Fluid Mechanics.
+							</p>
+						</div>
+						<div class="md:col-span-2 order-1 md:order-2">
+							<div class="aspect-video bg-[#fdfdfb] rounded-2xl border-2 border-dashed border-[#eee9d8] flex items-center justify-center">
+                                <span class="text-[#d4af37] font-mono text-[10px] uppercase tracking-widest">Image Coming Soon</span>
+                            </div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<footer class="mt-48 pt-12 border-t border-[#eee9d8] flex flex-col md:flex-row justify-between items-center text-[10px] text-[#a0a0a0] uppercase tracking-[0.5em] gap-6">
+				<span>&copy; {new Date().getFullYear()} {name}</span>
+                <span class="font-bold text-[#1a1a1a]">BITS Pilani</span>
+			</footer>
+		</main>
+	</body>
+</html>
