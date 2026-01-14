@@ -10,10 +10,22 @@ const emailObfuscated = "f20240460 AT goa DOT bits-pilani DOT ac DOT in";
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
-		<title>{name} | Portfolio</title>
+		<title>{name}</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Lustria&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+            
+        <meta name="description" content="Tejas Kulkarni - Mechanical Engineering Student at BITS Pilani. Interested in Fluid Mechanics, FEM, and Machine Learning." />
+        <meta name="keywords" content="Tejas Kulkarni, BITS Pilani, Mechanical Engineering, Fluid Mechanics, Bio-Photonics, Research" />
+        <meta name="author" content="Tejas Kulkarni" />
+
+        <meta property="og:title" content="Tejas Kulkarni | BITS Pilani Student" />
+        <meta property="og:description" content="Portfolio of Tejas Kulkarni, an undergraduate Mechanical Engineering student at BITS Pilani, Goa Campus." />
+        <meta property="og:image" content="/profile.jpeg" />
+        <meta property="og:url" content="https://tejas-nk.github.io" />
+        <meta name="google-site-verification" content="1WHLgYTAxeXAN_kiJnGMoZv17ed9dk-TLRlygUSsT7U" />
+
 	</head>
 	<body class="bg-[#fdfdfb] text-[#2d3436] font-['Lato'] antialiased">
 		<main class="max-w-3xl mx-auto px-8 py-24">
@@ -56,7 +68,7 @@ const emailObfuscated = "f20240460 AT goa DOT bits-pilani DOT ac DOT in";
 					<h2 class="text-[10px] font-bold uppercase tracking-[0.4em] text-[#967117]">Background</h2>
 					<p class="text-3xl leading-snug text-[#4a4a4a] font-light max-w-3xl">
 						{bio} I am deeply interested in <span class="text-black font-semibold">Fluid Mechanics</span>, <span class="text-black font-semibold">FEM</span>, and the integration of <span class="text-[#967117]">Machine Learning</span>  to solve complex Mechanical Engineering problems.
-						<br>Outside of academics, I love photography. Playing the guitar is also fun.</br>
+						<br>Outside of academics, I love photography and playing the guitar.</br>
 					</p>
 				</div>
 			</header>
@@ -83,13 +95,14 @@ const emailObfuscated = "f20240460 AT goa DOT bits-pilani DOT ac DOT in";
 			</section>
 
             <section class="mb-24">
-				<h2 class="text-[10px] font-bold uppercase tracking-[0.4em] text-[#967117] mb-10 border-b border-[#eee9d8] pb-4">Conferences & Talks</h2>
+				<h2 class="text-[10px] font-bold uppercase tracking-[0.4em] text-[#967117] mb-10 border-b border-[#eee9d8] pb-4">Conferences</h2>
 				<div class="space-y-8">
                     <div class="flex justify-between items-baseline group">
                         <div class="max-w-xl">
                             <h3 class="text-xl font-bold text-black group-hover:text-[#967117] transition-colors">ICIST - 2025</h3>
                             <p class="text-[#636e72] text-md mt-1 italic">Topic - Delayed Luminescence in Plants</p>
-							<p>First experience presenting at an international conference held in Karnataka, IN. It was a great experience talking to professors around the country and abroad. You can find my LinkedIn post <a href="https://www.linkedin.com/feed/update/urn:li:activity:7401603362007179264/"><span class="text-black font-semibold">here</span></a> <br>Supervised by Dr. Yuriy Petenev.</br></p>
+                            <p class="text-[#636e72] text-md mt-1">Best Speaker Award</p>
+							<p>First experience presenting at an international conference held in Karnataka, IN. It was great talking to professors around the country and abroad. You can find my LinkedIn post <a href="https://www.linkedin.com/feed/update/urn:li:activity:7401603362007179264/"><span class="text-black font-semibold">here</span></a> <br>Supervised by Dr. Yuriy Petenev.</br></p>
                         </div>
                         <span class="text-[#a0a0a0] font-mono text-[11px] uppercase">Oct 2025</span>
                     </div>
@@ -140,7 +153,7 @@ const emailObfuscated = "f20240460 AT goa DOT bits-pilani DOT ac DOT in";
 						</div>
 						<div class="md:col-span-2 order-1 md:order-2">
 							<div class="overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-[#eee9d8]">
-                                <img src="/project1.png" alt="Project 1" class="w-full grayscale hover:grayscale-0 transition-all duration-700" />
+                                <img src="/project1.jpeg" alt="Project 1"/>
                             </div>
 						</div>
 					</div>
@@ -164,14 +177,12 @@ const emailObfuscated = "f20240460 AT goa DOT bits-pilani DOT ac DOT in";
             </ul>
         </div>
 
-        <div class="flex gap-8 text-[10px] font-bold uppercase tracking-[0.2em] text-[#967117]">
-            <a href="#" class="hover:text-black transition-all border-b border-transparent hover:border-[#967117]">Design Report</a>
-            <a href="#" class="hover:text-black transition-all border-b border-transparent hover:border-[#967117]">Video Demo</a>
-        </div>
+        
     </div>
     
-			<div class="md:col-span-2 order-1 md:order-2">
-				<div class="overflow-hidden rounded-2xl shadow-xl border border-[#eee9d8] bg-white aspect-square flex items-center justify-center">
+	
+    <div class="md:col-span-2 order-1 md:order-2">
+				<div class="overflow-hidden rounded-2xl shadow-xl border border-[#eee9d8] bg-white flex items-center justify-center">
 					<img 
 						src="/wind-tunnel.gif" 
 						alt="Miniature Wind Tunnel Smoke Visualization" 
@@ -236,21 +247,7 @@ const emailObfuscated = "f20240460 AT goa DOT bits-pilani DOT ac DOT in";
     </div>
 </div>
 
-                    <div class="grid md:grid-cols-5 gap-12 items-center group">
-						<div class="md:col-span-3 order-2 md:order-1">
-							<h3 class="text-3xl font-['Lustria'] text-black mb-4 group-hover:text-[#967117] transition-colors leading-tight">
-                                Project Title Four
-                            </h3>
-							<p class="text-xl text-[#636e72] leading-relaxed mb-6 font-light">
-								A final project showcasing your range, perhaps something interdisciplinary like ML in Fluid Mechanics.
-							</p>
-						</div>
-						<div class="md:col-span-2 order-1 md:order-2">
-							<div class="aspect-video bg-[#fdfdfb] rounded-2xl border-2 border-dashed border-[#eee9d8] flex items-center justify-center">
-                                <span class="text-[#d4af37] font-mono text-[10px] uppercase tracking-widest">Image Coming Soon</span>
-                            </div>
-						</div>
-					</div>
+                    
 
 				</div>
 			</section>
