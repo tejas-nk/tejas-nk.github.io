@@ -1,0 +1,128 @@
+---
+import '../styles/global.css';
+
+const name = "Tejas Kulkarni";
+const email = "f20240460@goa.bits-pilani.ac.in";
+---
+
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Photography | {name}</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600&display=swap" rel="stylesheet">
+    </head>
+    
+    <body class="bg-[#FAFAFA] text-[#111111] font-['Newsreader'] antialiased selection:bg-sky-100">
+        
+        <div class="h-1.5 w-full bg-gradient-to-r from-sky-300 via-lime-300 to-[#FAFAFA]"></div>
+
+        <header class="w-full border-b border-slate-200 bg-[#FAFAFA]/90 backdrop-blur-sm sticky top-0 z-50">
+            <div class="max-w-3xl mx-auto px-6 h-16 flex items-center justify-between text-[15px]">
+                <a href="/" class="font-medium tracking-tight text-slate-800 hover:text-sky-600 transition-colors">
+                    {name}
+                </a>
+                <nav class="flex items-center gap-6 font-medium text-slate-500">
+                    <a href="/" class="hover:text-slate-900 transition-colors pb-0.5">CV</a>
+                    <a href="/photography" class="text-slate-900 border-b border-slate-900 pb-0.5">Photography</a>
+                    <a href={`mailto:${email}`} class="hover:text-slate-900 transition-colors pb-0.5">Email</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="max-w-3xl mx-auto px-6 py-16 md:py-24">
+            
+            <section class="mb-24">
+                <div class="flex flex-col md:flex-row justify-between md:items-end mb-10 gap-6">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl tracking-tight mb-2 text-slate-900 font-medium">
+                            Selected Photography
+                        </h1>
+                        <p class="text-slate-600 font-medium text-lg">
+                            Visual documentation and framing
+                        </p>
+                    </div>
+                    <a href="/" class="border border-sky-200 text-sky-700 px-5 py-2 rounded-full text-[15px] font-medium hover:bg-sky-50 transition-colors">
+                        &larr; Back to CV
+                    </a>
+                </div>
+                
+                <h2 class="text-2xl md:text-3xl leading-snug text-slate-800 max-w-2xl font-medium">
+                    A repository of <span class="bg-lime-100/70 text-lime-900 px-1.5 py-0.5 rounded-sm">visual moments</span> captured outside the structural constraints of the laboratory.
+                </h2>
+            </section>
+
+            <section class="mb-24">
+                <h3 class="text-lg font-semibold uppercase tracking-widest text-slate-500 mb-8 border-b border-slate-200 pb-3">
+                    Visual Journal
+                </h3>
+                
+                <div class="columns-1 md:columns-2 gap-6 space-y-6">
+                    
+                    <div class="break-inside-avoid shadow-sm hover:shadow-md transition-shadow duration-300 rounded-lg overflow-hidden border border-slate-100">
+                        <img 
+                            src="/photos/photo1.png" 
+                            alt="Photography artifact by Tejas Kulkarni" 
+                            class="w-full h-auto object-cover block"
+                            loading="lazy"
+                        />
+                    </div>
+
+                    <div class="break-inside-avoid shadow-sm hover:shadow-md transition-shadow duration-300 rounded-lg overflow-hidden border border-slate-100">
+                        <img 
+                            src="/photos/photo2.png" 
+                            alt="Photography artifact by Tejas Kulkarni" 
+                            class="w-full h-auto object-cover block"
+                            loading="lazy"
+                        />
+                    </div>
+
+                    <div class="break-inside-avoid shadow-sm hover:shadow-md transition-shadow duration-300 rounded-lg overflow-hidden border border-slate-100">
+                        <img 
+                            src="/photos/photo3.png" 
+                            alt="Photography artifact by Tejas Kulkarni" 
+                            class="w-full h-auto object-cover block"
+                            loading="lazy"
+                        />
+                    </div>
+
+                    <div class="break-inside-avoid shadow-sm hover:shadow-md transition-shadow duration-300 rounded-lg overflow-hidden border border-slate-100">
+                        <img 
+                            src="/photos/photo4.png" 
+                            alt="Photography artifact by Tejas Kulkarni" 
+                            class="w-full h-auto object-cover block"
+                            loading="lazy"
+                        />
+                    </div>
+
+                    <div class="break-inside-avoid shadow-sm hover:shadow-md transition-shadow duration-300 rounded-lg overflow-hidden border border-slate-100">
+                        <img 
+                            src="/photos/photo5.png" 
+                            alt="Photography artifact by Tejas Kulkarni" 
+                            class="w-full h-auto object-cover block"
+                            loading="lazy"
+                        />
+                    </div>
+
+                    <div class="break-inside-avoid shadow-sm hover:shadow-md transition-shadow duration-300 rounded-lg overflow-hidden border border-slate-100">
+                        <img 
+                            src="/photos/photo6.png" 
+                            alt="Photography artifact by Tejas Kulkarni" 
+                            class="w-full h-auto object-cover block"
+                            loading="lazy"
+                        />
+                    </div>
+
+                </div>
+            </section>
+
+            <footer class="pt-10 border-t border-slate-200 text-sm text-slate-400 uppercase tracking-widest text-center font-medium">
+                Tejas Kulkarni • Visuals
+            </footer>
+            
+        </main>
+    </body>
+</html>
